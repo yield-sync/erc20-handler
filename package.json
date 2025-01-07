@@ -1,5 +1,5 @@
 {
-	"name": "yield-sync-v1-vaults",
+	"name": "@yield-sync/strategy-interactor",
 	"version": "0.0.1",
 	"description": "",
 	"main": "scripts/deploy.js",
