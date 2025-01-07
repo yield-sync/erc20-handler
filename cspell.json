@@ -1,0 +1,9 @@
+{
+    "version": "0.2",
+    "ignorePaths": [],
+    "dictionaryDefinitions": [],
+    "dictionaries": [],
+    "words": [],
+    "ignoreWords": ["chainlink", "EMPERC", "EMPETH", "existant", "IERC", "inheritdoc", "Interactor", "Reentrancy", "USDCV"],
+    "import": []
+}

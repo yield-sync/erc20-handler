@@ -1,0 +1,41 @@
+{
+	"name": "yield-sync-v1-vaults",
+	"version": "0.0.1",
+	"description": "",
+	"main": "scripts/deploy.js",
+	"scripts": {
+		"size-contracts": "npx hardhat size-contracts",
+		"deploy-to-base-sepolia": "npx hardhat run scripts/Deploy.ts --network base-sepolia",
+		"deploy-to-sepolia": "npx hardhat run scripts/Deploy.ts --network sepolia"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/yield-sync/v1-vaults.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@chainlink/contracts": "^0.8.0",
+		"@eth-optimism/plugins": "^1.0.0-alpha.3",
+		"@nomicfoundation/hardhat-chai-matchers": "^1.0.5",
+		"@nomicfoundation/hardhat-toolbox": "^2.0.1",
+		"@nomiclabs/hardhat-ethers": "^2.2.3",
+		"@nomiclabs/hardhat-solhint": "^3.0.0",
+		"@openzeppelin/contracts": "^4.9.3",
+		"@openzeppelin/contracts-upgradeable": "^4.9.3",
+		"@types/chai": "^4.3.16",
+		"@types/mocha": "^10.0.6",
+		"@types/node": "^20.12.12",
+		"chai": "^4.4.1",
+		"dotenv": "^16.0.3",
+		"ethers": "^5.7.2",
+		"hardhat": "^2.12.6",
+		"soltypes": "^2.0.0",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.4.5"
+	},
+	"dependencies": {
+		"hardhat-contract-sizer": "^2.10.0"
+	}
+}
