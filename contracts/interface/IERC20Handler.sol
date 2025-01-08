@@ -2,7 +2,7 @@
 pragma solidity ^0.8.18;
 
 
-interface IV1EMPStrategyInteractor
+interface IERC20Handler
 {
 	/**
 	* @notice Total amounts locked

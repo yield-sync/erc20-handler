@@ -5,14 +5,14 @@ pragma solidity ^0.8.18;
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import { ReentrancyGuard } from "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
-import { IV1EMPStrategyInteractor } from "./interface/IV1EMPStrategyInteractor.sol";
+import { IERC20Handler } from "./interface/IERC20Handler.sol";
 
 /**
 * @notice This contract does not deposit tokens into a protocol
 */
-contract SimpleV1EMPStrategyInteractor is
+contract Holder is
 	ReentrancyGuard,
-	IV1EMPStrategyInteractor
+	IERC20Handler
 {
 	address public immutable OWNER;
 
@@ -38,7 +38,7 @@ contract SimpleV1EMPStrategyInteractor is
 	}
 
 
-	/// @inheritdoc IV1EMPStrategyInteractor
+	/// @inheritdoc IERC20Handler
 	function utilizedERC20TotalBalance(address _utilizedERC20)
 		public
 		view
@@ -49,7 +49,7 @@ contract SimpleV1EMPStrategyInteractor is
 	}
 
 
-	/// @inheritdoc IV1EMPStrategyInteractor
+	/// @inheritdoc IERC20Handler
 	function utilizedERC20Deposit(address _from, address _utilizedERC20, uint256 _utilizedERC20Amount)
 		public
 		override
@@ -59,7 +59,7 @@ contract SimpleV1EMPStrategyInteractor is
 		IERC20(_utilizedERC20).transferFrom(_from, address(this), _utilizedERC20Amount);
 	}
 
-	/// @inheritdoc IV1EMPStrategyInteractor
+	/// @inheritdoc IERC20Handler
 	function utilizedERC20Withdraw(address _to, address _utilizedERC20, uint256 _utilizedERC20Amount)
 		public
 		override
