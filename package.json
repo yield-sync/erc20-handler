@@ -1,5 +1,5 @@
 {
-	"name": "@yield-sync/strategy-interactor",
+	"name": "@yield-sync/erc20-handler",
 	"version": "0.0.1",
 	"description": "",
 	"main": "scripts/deploy.js",
