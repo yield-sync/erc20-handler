@@ -1,4 +1,4 @@
-# Yield Sync Strategy Interactors
+# Yield Sync ERC20 Handler
 
 ## Get Started
 
