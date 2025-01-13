@@ -8,7 +8,7 @@ import { ReentrancyGuard } from "@openzeppelin/contracts/security/ReentrancyGuar
 import { IERC20Handler } from "./interface/IERC20Handler.sol";
 
 /**
-* @notice This contract does not deposit tokens into a protocol
+* @notice This contract holds any sent ERC20 tokens, and only the owner can withdraw them.
 */
 contract Holder is
 	ReentrancyGuard,
