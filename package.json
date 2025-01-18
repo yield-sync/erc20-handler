@@ -1,6 +1,6 @@
 {
 	"name": "@yield-sync/erc20-handler",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "",
 	"main": "scripts/deploy.js",
 	"scripts": {
@@ -10,7 +10,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/yield-sync/v1-vaults.git"
+		"url": "git+https://github.com/yield-sync/v1-erc20-handler.git"
 	},
 	"keywords": [],
 	"author": "",
