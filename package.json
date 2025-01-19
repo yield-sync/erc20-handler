@@ -1,12 +1,11 @@
 {
 	"name": "@yield-sync/erc20-handler",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "",
-	"main": "scripts/deploy.js",
+	"main": "",
 	"scripts": {
-		"size-contracts": "npx hardhat size-contracts",
-		"deploy-to-base-sepolia": "npx hardhat run scripts/Deploy.ts --network base-sepolia",
-		"deploy-to-sepolia": "npx hardhat run scripts/Deploy.ts --network sepolia"
+		"deploy-to-base-sepolia": "npx hardhat run scripts/deploy.ts --network base-sepolia",
+		"deploy-to-sepolia": "npx hardhat run scripts/deploy.ts --network sepolia"
 	},
 	"repository": {
 		"type": "git",
